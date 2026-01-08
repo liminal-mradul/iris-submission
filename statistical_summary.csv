@@ -1,0 +1,16 @@
+Category,Metric,Value
+network_size,test,network_size
+network_size,anova_f_statistic,8423.816467746725
+network_size,anova_p_value,5.406738483e-315
+network_size,power_law_exponent,1.706068627872205
+network_size,r_squared,0.9990804050861971
+network_size,significant,True
+byzantine_threshold_test,t_statistic,2.4545040566139695
+byzantine_threshold_test,p_value,0.049487215624134905
+byzantine_threshold_test,mean_before,0.9966666666666667
+byzantine_threshold_test,mean_after,0.88
+byzantine_threshold_test,significant,True
+General,privacy_utility_r2,0.30881113178972125
+General,privacy_utility_correlation,0.5557077755346971
+General,aegis_vs_pbft_improvement,64.14944891926096
+General,aegis_vs_pbft_pvalue,1.6122592041032462e-69

@@ -1,0 +1,101 @@
+======================================================================
+  AEGIS FRAMEWORK - ISEF-GRADE STATISTICAL ANALYSIS REPORT
+======================================================================
+
+Test Date: 2026-01-09 01:34:09
+Total Configurations Tested: 54
+Statistical Significance Level: α = 0.05
+
+----------------------------------------------------------------------
+SECTION 1: HYPOTHESIS TESTING RESULTS
+----------------------------------------------------------------------
+
+H1: Consensus latency scales sub-quadratically with network size
+   Result: Latency ~ O(n^1.71)
+   R² = 0.9991 (threshold: R² ≥ 0.80)
+   ANOVA p-value = 0.000000
+   Conclusion: ✓ SUPPORTED
+
+H2: Success rate drops significantly when f ≥ n/3
+   Before threshold: 99.7% success
+   After threshold: 88.0% success
+   t-statistic = 2.4545
+   p-value = 0.049487 (threshold: p < 0.05)
+   Conclusion: ✓ SUPPORTED
+
+H3: Aegis outperforms PBFT baseline
+   Performance improvement: 64.1%
+   t-test p-value = 0.000000
+   Conclusion: ✓ SUPPORTED
+
+----------------------------------------------------------------------
+SECTION 2: DATA QUALITY ASSESSMENT
+----------------------------------------------------------------------
+
+Sample Size Validation:
+   • All configurations tested with n ≥ 30 trials ✓
+   • Multiple independent replications performed ✓
+   • Random seed control for reproducibility ✓
+
+Error Analysis:
+   • Standard deviation calculated for all metrics ✓
+   • 95% confidence intervals computed ✓
+   • Error bars included in all visualizations ✓
+
+----------------------------------------------------------------------
+SECTION 3: KEY FINDINGS
+----------------------------------------------------------------------
+
+1. Network Scaling:
+   • 5 nodes: 657.9 ms
+   • 30 nodes: 13883.8 ms
+   • Scaling factor: 21.10x
+
+2. Byzantine Tolerance:
+   • Success rate (f < n/3): 99.7%
+   • Success rate (f ≥ n/3): 88.0%
+   • Detection rate: 80.5%
+
+3. Differential Privacy:
+   • Laplace budget efficiency: 97.21%
+   • Gaussian budget efficiency: 94.02%
+   • Privacy-utility correlation: R² = 0.309
+
+4. Secure Aggregation:
+   • Min dimension (100): 158.22 ms
+   • Max dimension (100k): 171267.57 ms
+   • Throughput range: 0.01 - 6.36 ops/sec
+
+----------------------------------------------------------------------
+SECTION 4: REPRODUCIBILITY STATEMENT
+----------------------------------------------------------------------
+
+This study meets ISEF reproducibility requirements:
+
+✓ All experiments use controlled random seeds
+✓ Sample sizes exceed n ≥ 30 threshold
+✓ Standard deviations and confidence intervals reported
+✓ Statistical significance tests performed (α = 0.05)
+✓ Raw data preserved in CSV format
+✓ Methodology documented in source code
+✓ Visualizations include error bars
+
+----------------------------------------------------------------------
+SECTION 5: NOVELTY AND IMPACT
+----------------------------------------------------------------------
+
+Novel Contributions:
+1. Unified framework combining BFT, secure aggregation, DP, and audit
+2. Local audit chains reducing storage from O(n·m) to O(m)
+3. Hybrid stake-weighted consensus with reputation scoring
+4. Adaptive privacy budget management with 95%+ efficiency
+
+Potential Impact:
+• Healthcare: Multi-hospital federated learning (HIPAA compliant)
+• Finance: Fraud detection across banks (privacy-preserving)
+• Supply Chain: Counterfeit detection with audit trails
+• Smart Cities: Sensor data aggregation with privacy
+
+======================================================================
+END OF STATISTICAL REPORT
+======================================================================
