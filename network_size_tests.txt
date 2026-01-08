@@ -1,0 +1,9 @@
+Statistical Analysis: network_size
+============================================================
+
+test: network_size
+anova_f_statistic: 8423.816467746725
+anova_p_value: 5.406738483e-315
+power_law_exponent: 1.706068627872205
+r_squared: 0.9990804050861971
+significant: True
